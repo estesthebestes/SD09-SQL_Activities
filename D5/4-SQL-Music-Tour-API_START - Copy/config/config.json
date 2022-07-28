@@ -4,20 +4,38 @@
     "password": "password",
     "database": "music_tour",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions":{
+      "ssl":{
+        "require":true,
+        "rejectUnauthorized":false
+      }
+    }
   },
   "test": {
     "username": "postgres",
     "password": "password",
     "database": "music_tour_test",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions":{ 
+      "ssl":{
+        "require":true,
+        "rejectUnauthorized":false
+      }
+    }
   },
   "production": {
     "username": "postgres",
     "password": "password",
     "database": "music_tour_production",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "dialectOptions":{
+      "ssl":{
+        "require":true,
+        "rejectUnauthorized":false
+      }
+    }
   }
 }
